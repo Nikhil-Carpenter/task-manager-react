@@ -1,0 +1,52 @@
+.alert{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+    min-width:30rem;
+    border-left: 8px solid transparent;
+    background-color: rgb(242 209 209);
+    color: red;
+    border-color: red;
+    right: 1rem;
+    top: 1rem;
+    box-shadow: unset;
+    animation : slide-in 1s ease forwards;
+}
+.icons:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+@keyframes slide-in {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-1rem);
+    }
+}
+
+.danger{
+    color: #d1281f;
+    border-color: #d1281f;
+    background-color: #f8d7da;
+}
+.danger > *{
+    color: #721c24;
+}
+
+.success{
+    color: #0d8c2f;
+    border-color: #0d8c2f;
+    background-color: #f8d7da;
+}
+.success > *{
+    color: #0d8c2f;
+}
